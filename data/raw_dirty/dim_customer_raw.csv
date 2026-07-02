@@ -1,0 +1,211 @@
+CUSTOMER_KEY,CUSTOMER_NAME,SEGMENT,COUNTRY,REGION
+CUST0001,Customer 001,Wholesale,Brazil,AMER
+CUST0002,,OEM,UK,EMEA
+CUST0003,Customer 003,OEM,  Canada,AMER
+CUST0004,Customer 004,wholesale,Germany,EMEA
+CUST0005,Customer 005,Wholesale,France,EMEA
+CUST0006,Customer 006,wholesale,UK,EMEA
+CUST0007,Customer 007,Wholesale,Canada,AMER
+CUST0008,Customer 008,OEM,UK,EMEA
+CUST0009,Customer 009,wholesale,Canada,AMER
+CUST0010,Customer 010,OEM,  France,EMEA
+CUST0011,Customer 011,wholesale,India,APAC
+CUST0012,,OEM,UK,EMEA
+CUST0013,Customer 013,WHOLESALE,USA,AMER
+CUST0014,Customer 014,Retail,France,EMEA
+CUST0015,Customer 015,retail ,France,EMEA
+CUST0016,Customer 016,Wholesale,Brazil,AMER
+CUST0017,Customer 017,Wholesale,Germany,EMEA
+CUST0018,Customer 018,Wholesale,Australia,APAC
+CUST0019,Customer 019,Wholesale,France,EMEA
+CUST0020,Customer 020,Wholesale,Brazil,AMER
+CUST0021,Customer 021,Retail,  Australia,APAC
+CUST0022,Customer 022,Govt,BRAZIL,AMER
+CUST0023,Customer 023,wholesale,Australia,APAC
+CUST0024,Customer 024,Retail,France,EMEA
+CUST0025,Customer 025,retail ,Germany,EMEA
+CUST0026,Customer 026,WHOLESALE,  India,APAC
+CUST0027,Customer 027,Oem,USA   ,AMER
+CUST0028,Customer 028,Retail,USA,AMER
+CUST0029,Customer 029,OEM,Australia,APAC
+CUST0030,Customer 030,Wholesale,USA,AMER
+CUST0031,Customer 031,wholesale,UK,EMEA
+CUST0032,Customer 032,Retail,GERMANY,EMEA
+CUST0033,Customer 033,Retail,Canada,AMER
+CUST0034,Customer 034,Retail,USA,AMER
+CUST0035,Customer 035,Oem,UK,EMEA
+CUST0036,Customer 036,Wholesale,India,APAC
+CUST0037,Customer 037,wholesale,Brazil,AMER
+CUST0038,Customer 038,Govt,USA,AMER
+CUST0039,Customer 039,Retail,USA,AMER
+CUST0040,Customer 040,Wholesale,Canada,AMER
+CUST0041,Customer 041,Retail,australia,APAC
+CUST0042,Customer 042,Wholesale,Brazil,AMER
+CUST0043,Customer 043,OEM,Canada,AMER
+CUST0044,Customer 044,Oem,  Brazil,AMER
+CUST0045,Customer 045,OEM,Australia,APAC
+CUST0046,Customer 046,O.E.M.,  France,EMEA
+CUST0047,Customer 047,Government,UK,EMEA
+CUST0048,Customer 048,Wholesale,Australia   ,APAC
+CUST0049,Customer 049,Government,Germany,EMEA
+CUST0050,Customer 050,OEM,Australia,APAC
+CUST0051,Customer 051,Wholesale,France,EMEA
+CUST0052,Customer 052,OEM,UK,EMEA
+CUST0053,Customer 053,Wholesale,Australia,APAC
+CUST0054,Customer 054,Wholesale,Australia,APAC
+CUST0055,Customer 055,OEM,Canada,AMER
+CUST0056,Customer 056,Government,Germany,EMEA
+CUST0057,Customer 057,O.E.M.,Canada,AMER
+CUST0058,Customer 058,OEM,USA,AMER
+CUST0059,Customer 059,Wholesale,Germany,EMEA
+CUST0060,Customer 060,Wholesale,UK,EMEA
+CUST0061,Customer 061,OEM,USA,AMER
+CUST0062,Customer 062,retail ,USA,AMER
+CUST0063,Customer 063,Wholesale,Australia,APAC
+CUST0064,Customer 064,Retail,Brazil,AMER
+CUST0065,Customer 065,Oem,Australia,APAC
+CUST0066,Customer 066,Wholesale,Australia,APAC
+CUST0067,Customer 067,WHOLESALE,Brazil,AMER
+CUST0068,Customer 068,Retail,France,EMEA
+CUST0069,Customer 069,Retail,India,APAC
+CUST0070,Customer 070,Retail,UK   ,EMEA
+CUST0071,Customer 071,Government,India   ,APAC
+CUST0072,Customer 072,Wholesale,France,EMEA
+CUST0073,Customer 073,Wholesale,USA,AMER
+CUST0074,Customer 074,Wholesale,Australia,APAC
+CUST0075,Customer 075,OEM,Australia,APAC
+CUST0076,Customer 076,Wholesale,France,EMEA
+CUST0077,Customer 077,WHOLESALE,Canada,AMER
+CUST0078,Customer 078,OEM,CANADA,AMER
+CUST0079,Customer 079,oem,USA,AMER
+CUST0080,Customer 080,OEM,India,APAC
+CUST0081,Customer 081,wholesale,France,EMEA
+CUST0082,Customer 082,wholesale,Canada,AMER
+CUST0083,Customer 083,OEM,germany,EMEA
+CUST0084,Customer 084,OEM,France,EMEA
+CUST0085,Customer 085,Wholesale,Germany,EMEA
+CUST0086,Customer 086,Government,Brazil   ,AMER
+CUST0087,Customer 087,Wholesale,Australia,APAC
+CUST0088,Customer 088,Retail,France,EMEA
+CUST0089,Customer 089,Retail,Brazil,AMER
+CUST0090,Customer 090,government,CANADA,AMER
+CUST0091,Customer 091,retail ,France,EMEA
+CUST0092,Customer 092,OEM,Australia   ,APAC
+CUST0093,Customer 093,WHOLESALE,France,EMEA
+CUST0094,Customer 094,Wholesale,Brazil,AMER
+CUST0095,Customer 095,Govt,Canada,AMER
+CUST0096,Customer 096,Government,Brazil,AMER
+CUST0097,Customer 097,Retail,Germany,EMEA
+CUST0098,Customer 098,Retail,India,APAC
+CUST0099,Customer 099,OEM,Brazil,AMER
+CUST0100,,OEM,india,APAC
+CUST0101,Customer 101,Wholesale,France,EMEA
+CUST0102,Customer 102,Govt,  Australia,APAC
+CUST0103,Customer 103,Government,Australia,APAC
+CUST0104,Customer 104,Wholesale,  UK,EMEA
+CUST0105,Customer 105,oem,USA   ,AMER
+CUST0106,Customer 106,Wholesale,australia,APAC
+CUST0107,Customer 107,Government,France,EMEA
+CUST0108,Customer 108,Retail,Australia,APAC
+CUST0109,Customer 109,Wholesale,GERMANY,EMEA
+CUST0110,Customer 110,OEM,USA,AMER
+CUST0111,Customer 111,Retail,India,APAC
+CUST0112,Customer 112,Retail,USA,AMER
+CUST0113,Customer 113,Retail,Brazil,AMER
+CUST0114,Customer 114,Retail,Australia,APAC
+CUST0115,Customer 115,OEM,UK,EMEA
+CUST0116,Customer 116,oem,Australia,APAC
+CUST0117,Customer 117,retail ,USA,AMER
+CUST0118,Customer 118,OEM,France,EMEA
+CUST0119,Customer 119,Retail,Canada,AMER
+CUST0120,Customer 120,O.E.M.,France,EMEA
+CUST0121,Customer 121,Retail,Australia,APAC
+CUST0122,Customer 122,retail ,UK,EMEA
+CUST0123,Customer 123,Retail,India,APAC
+CUST0124,Customer 124,Wholesale,Germany,EMEA
+CUST0125,Customer 125,Oem,  Australia,APAC
+CUST0126,Customer 126,Wholesale,Australia,APAC
+CUST0127,Customer 127,oem,UK,EMEA
+CUST0128,Customer 128,Retail,UK,EMEA
+CUST0129,,OEM,Australia,APAC
+CUST0130,Customer 130,Wholesale,Germany,EMEA
+CUST0131,Customer 131,Retail,UK,EMEA
+CUST0132,Customer 132,Government,Brazil,AMER
+CUST0133,Customer 133,Wholesale,Brazil,AMER
+CUST0134,Customer 134,OEM,India,APAC
+CUST0135,Customer 135,Government,USA,AMER
+CUST0136,Customer 136,retail ,France,EMEA
+CUST0137,Customer 137,WHOLESALE,Brazil,AMER
+CUST0138,Customer 138,government,France,EMEA
+CUST0139,Customer 139,OEM,Germany,EMEA
+CUST0140,Customer 140,Wholesale,UK,EMEA
+CUST0141,Customer 141,Oem,USA,AMER
+CUST0142,Customer 142,OEM,USA,AMER
+CUST0143,Customer 143,wholesale,India,APAC
+CUST0144,Customer 144,Wholesale,UK,EMEA
+CUST0145,Customer 145,Govt,UK,EMEA
+CUST0146,Customer 146,retail ,UK,EMEA
+CUST0147,Customer 147,OEM,France,EMEA
+CUST0148,Customer 148,retail ,France,EMEA
+CUST0149,Customer 149,Wholesale,UK,EMEA
+CUST0150,Customer 150,Government,germany,EMEA
+CUST0151,Customer 151,Retail,India,APAC
+CUST0152,Customer 152,WHOLESALE,France,EMEA
+CUST0153,Customer 153,OEM,France,EMEA
+CUST0154,Customer 154,OEM,brazil,AMER
+CUST0155,Customer 155,Oem,India,APAC
+CUST0156,Customer 156,Retail,India,APAC
+CUST0157,Customer 157,Wholesale,usa,AMER
+CUST0158,Customer 158,Retail,INDIA,APAC
+CUST0159,Customer 159,Wholesale,France,EMEA
+CUST0160,Customer 160,Wholesale,Australia,APAC
+CUST0161,Customer 161,Retail,Canada,AMER
+CUST0162,Customer 162,Retail,Canada,AMER
+CUST0163,Customer 163,retail ,Brazil,AMER
+CUST0164,Customer 164,OEM,Canada,AMER
+CUST0165,Customer 165,oem,Germany,EMEA
+CUST0166,Customer 166,retail ,France,EMEA
+CUST0167,Customer 167,Wholesale,India,APAC
+CUST0168,Customer 168,wholesale,Canada,AMER
+CUST0169,Customer 169,Government,Germany,EMEA
+CUST0170,Customer 170,Oem,USA,AMER
+CUST0171,Customer 171,oem,India,APAC
+CUST0172,Customer 172,OEM,USA,AMER
+CUST0173,Customer 173,Wholesale,CANADA,AMER
+CUST0174,Customer 174,Wholesale,UK,EMEA
+CUST0175,Customer 175,OEM,USA,AMER
+CUST0176,,wholesale,USA,AMER
+CUST0177,Customer 177,retail ,Australia,APAC
+CUST0178,Customer 178,OEM,USA,AMER
+CUST0179,Customer 179,Wholesale,canada,AMER
+CUST0180,Customer 180,WHOLESALE,India   ,APAC
+CUST0181,Customer 181,OEM,Germany,EMEA
+CUST0182,Customer 182,Retail,USA,AMER
+CUST0183,Customer 183,Wholesale,Germany,EMEA
+CUST0184,Customer 184,wholesale,USA,AMER
+CUST0185,Customer 185,wholesale,USA,AMER
+CUST0186,Customer 186,Retail,India,APAC
+CUST0187,Customer 187,oem,UK,EMEA
+CUST0188,Customer 188,Wholesale,Australia,APAC
+CUST0189,Customer 189,Wholesale,France,EMEA
+CUST0190,Customer 190,Retail,Germany,EMEA
+CUST0191,Customer 191,Wholesale,India   ,APAC
+CUST0192,Customer 192,Government,Germany,EMEA
+CUST0193,Customer 193,WHOLESALE,UK,EMEA
+CUST0194,Customer 194,Retail,USA,AMER
+CUST0195,Customer 195,OEM,  Germany,EMEA
+CUST0196,Customer 196,OEM,Germany,EMEA
+CUST0197,Customer 197,OEM,USA,AMER
+CUST0198,Customer 198,OEM,Canada,AMER
+CUST0199,Customer 199,O.E.M.,Australia,APAC
+CUST0200,Customer 200,Wholesale,USA,AMER
+CUST0047,Customer 047,Government,UK,EMEA
+CUST0117,Customer 117,retail ,USA,AMER
+CUST0147,Customer 147,OEM,France,EMEA
+CUST0191,Customer 191,Wholesale,India   ,APAC
+CUST0149,Customer 149,Wholesale,UK,EMEA
+CUST0164,Customer 164,OEM,Canada,AMER
+CUST0184,Customer 184,wholesale,USA,AMER
+CUST0129,,OEM,Australia,APAC
+CUST0122,Customer 122,retail ,UK,EMEA
+CUST0104,Customer 104,Wholesale,  UK,EMEA

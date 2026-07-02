@@ -1,0 +1,7 @@
+WAREHOUSE_KEY,WAREHOUSE_NAME,CITY,COUNTRY,REGION
+WH01,Frankfurt DC,Frankfurt,Germany,EMEA
+WH02,Hyderabad DC,Hyderabad,India,APAC
+WH03,Chicago DC,Chicago,USA,AMER
+WH04,Singapore DC,Singapore,Singapore,APAC
+WH05,Milan DC,Milan,Italy,EMEA
+WH06,Monterrey DC,Monterrey,Mexico,AMER

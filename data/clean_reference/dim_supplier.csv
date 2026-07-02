@@ -1,0 +1,26 @@
+SUPPLIER_KEY,SUPPLIER_NAME,COUNTRY,REGION,RELIABILITY_TIER,BASE_LEAD_TIME_DAYS,TARGET_OTIF
+SUP001,Germany Components 01,Germany,EMEA,A,12,0.972
+SUP002,Mexico Components 02,Mexico,AMER,B,19,0.844
+SUP003,Japan Components 03,Japan,APAC,C,35,0.563
+SUP004,Japan Components 04,Japan,APAC,B,15,0.916
+SUP005,Mexico Components 05,Mexico,AMER,A,12,0.933
+SUP006,Poland Components 06,Poland,EMEA,C,33,0.588
+SUP007,USA Components 07,USA,AMER,B,17,0.852
+SUP008,Mexico Components 08,Mexico,AMER,A,11,0.978
+SUP009,India Components 09,India,APAC,A,11,0.93
+SUP010,USA Components 10,USA,AMER,B,20,0.817
+SUP011,USA Components 11,USA,AMER,B,23,0.876
+SUP012,Germany Components 12,Germany,EMEA,A,10,0.956
+SUP013,Poland Components 13,Poland,EMEA,A,12,0.947
+SUP014,India Components 14,India,APAC,B,24,0.898
+SUP015,China Components 15,China,APAC,A,7,0.958
+SUP016,Poland Components 16,Poland,EMEA,B,19,0.836
+SUP017,Italy Components 17,Italy,EMEA,A,9,0.988
+SUP018,USA Components 18,USA,AMER,C,41,0.604
+SUP019,Germany Components 19,Germany,EMEA,C,35,0.666
+SUP020,Italy Components 20,Italy,EMEA,C,40,0.675
+SUP021,India Components 21,India,APAC,B,20,0.805
+SUP022,India Components 22,India,APAC,A,9,0.965
+SUP023,Poland Components 23,Poland,EMEA,A,11,0.931
+SUP024,USA Components 24,USA,AMER,A,12,0.959
+SUP025,Italy Components 25,Italy,EMEA,A,10,0.961
