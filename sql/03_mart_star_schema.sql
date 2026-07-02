@@ -1,0 +1,58 @@
+/* ============================================================================
+   03 - MART STAR SCHEMA
+   Dimension + fact VIEWS forming a clean star. Row-level business logic
+   (lead time, OTIF flags, fill rate, stockout flags, stock value) is computed
+   here in SQL; aggregation ratios (OTIF %, avg lead time, etc.) live in DAX.
+   ============================================================================ */
+
+USE ROLE SYSADMIN;
+USE WAREHOUSE WH_INGEST;
+USE DATABASE SUPPLY_CHAIN;
+
+-- ---------- Dimension views (thin conformed pass-throughs) ----------
+CREATE OR REPLACE VIEW MART.DIM_DATE      AS SELECT * FROM STG.DIM_DATE;
+CREATE OR REPLACE VIEW MART.DIM_SUPPLIER  AS SELECT * FROM STG.DIM_SUPPLIER;
+CREATE OR REPLACE VIEW MART.DIM_PRODUCT   AS SELECT * FROM STG.DIM_PRODUCT;
+CREATE OR REPLACE VIEW MART.DIM_CUSTOMER  AS SELECT * FROM STG.DIM_CUSTOMER;
+CREATE OR REPLACE VIEW MART.DIM_WAREHOUSE AS SELECT * FROM STG.DIM_WAREHOUSE;
+CREATE OR REPLACE VIEW MART.DIM_SHIP_MODE AS SELECT * FROM STG.DIM_SHIP_MODE;
+
+-- ---------- Purchase orders (inbound / procurement) ----------
+CREATE OR REPLACE VIEW MART.FACT_PURCHASE_ORDERS AS
+SELECT
+    PO_ID, SUPPLIER_KEY, PRODUCT_KEY, WAREHOUSE_KEY,
+    ORDER_DATE_KEY, PROMISED_DATE_KEY, RECEIVED_DATE_KEY,
+    ORDER_QTY, RECEIVED_QTY, UNIT_COST, PO_AMOUNT,
+    DATEDIFF('day', ORDER_DATE, RECEIVED_DATE)                              AS LEAD_TIME_DAYS,
+    IFF(RECEIVED_DATE <= PROMISED_DATE, 1, 0)                               AS IS_ON_TIME,
+    IFF(RECEIVED_QTY >= ORDER_QTY, 1, 0)                                    AS IS_IN_FULL,
+    IFF(RECEIVED_DATE <= PROMISED_DATE AND RECEIVED_QTY >= ORDER_QTY, 1, 0) AS IS_OTIF,
+    GREATEST(DATEDIFF('day', PROMISED_DATE, RECEIVED_DATE), 0)              AS DAYS_LATE
+FROM STG.FACT_PURCHASE_ORDERS;
+
+-- ---------- Sales orders (outbound / fulfillment) ----------
+CREATE OR REPLACE VIEW MART.FACT_SALES_ORDERS AS
+SELECT
+    SO_ID, CUSTOMER_KEY, PRODUCT_KEY, WAREHOUSE_KEY, SHIP_MODE_KEY,
+    ORDER_DATE_KEY, SHIP_DATE_KEY, PROMISED_DATE_KEY, DELIVERY_DATE_KEY,
+    ORDER_QTY, SHIPPED_QTY, FREIGHT_COST, REVENUE,
+    DATEDIFF('day', ORDER_DATE, DELIVERY_DATE)                                AS DELIVERY_DAYS,
+    IFF(DELIVERY_DATE <= PROMISED_DATE, 1, 0)                                 AS IS_ON_TIME,
+    IFF(SHIPPED_QTY >= ORDER_QTY, 1, 0)                                       AS IS_IN_FULL,
+    IFF(DELIVERY_DATE <= PROMISED_DATE AND SHIPPED_QTY >= ORDER_QTY, 1, 0)    AS IS_OTIF,
+    ROUND(DIV0(SHIPPED_QTY, ORDER_QTY), 3)                                    AS FILL_RATE,
+    ROUND(DIV0(FREIGHT_COST, SHIPPED_QTY), 2)                                 AS FREIGHT_PER_UNIT,
+    GREATEST(DATEDIFF('day', PROMISED_DATE, DELIVERY_DATE), 0)                AS DAYS_LATE
+FROM STG.FACT_SALES_ORDERS;
+
+-- ---------- Inventory (weekly snapshots) ----------
+CREATE OR REPLACE VIEW MART.FACT_INVENTORY AS
+SELECT
+    i.PRODUCT_KEY, i.WAREHOUSE_KEY, i.SNAPSHOT_DATE_KEY,
+    i.ON_HAND_QTY, i.REORDER_POINT, i.SAFETY_STOCK,
+    IFF(i.ON_HAND_QTY = 0, 1, 0)                     AS IS_STOCKOUT,
+    IFF(i.ON_HAND_QTY < i.REORDER_POINT, 1, 0)       AS IS_BELOW_REORDER,
+    IFF(i.ON_HAND_QTY < i.SAFETY_STOCK, 1, 0)        AS IS_BELOW_SAFETY,
+    ROUND(i.ON_HAND_QTY * p.UNIT_COST, 2)            AS STOCK_VALUE
+FROM STG.FACT_INVENTORY i
+JOIN MART.DIM_PRODUCT p ON i.PRODUCT_KEY = p.PRODUCT_KEY;
